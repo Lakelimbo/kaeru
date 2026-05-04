@@ -25,8 +25,10 @@ vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
 # Test compose files
-*-compose.test.(yml|yaml)
-compose.test.(yml|yaml)
+*-compose.test.yml
+*-compose.test.yaml
+compose.test.yml
+compose.test.yaml
 
 # Test coverage
 coverage.out

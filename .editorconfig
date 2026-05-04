@@ -1,0 +1,35 @@
+; https://editconfig.org/
+
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[{*.go,justfile}]
+indent_style = tab
+indent_size = 4
+
+[go.{mod,work,work.sum,sum}]
+charset = unset
+end_of_line = unset
+insert_final_newline = unset
+trim_trailing_whitespace = unset
+indent_style = unset
+indent_size = unset
+indent_style = unset
+
+[*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,vue,css,scss,sass,less,styl}]
+end_of_line = lf
+max_line_length = 100
+
+[*.md]
+indent_size = 4
+trim_trailing_whitespace = false
+eclint_ident_style = unset
+
+[Dockerfile]
+indent_size = 4
